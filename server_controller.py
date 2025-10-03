@@ -4,19 +4,31 @@ import subprocess
 import signal
 import re
 
-# Pull paths from environment (set in .env and loaded by main.py)
+# --- Load required environment variables ---
 SERVER_BASE_PATH = os.environ.get("SERVER_BASE")
 PID_FILE = os.environ.get("PID_FILE")
 
 def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
 
+def require_env(var_name, value):
+    """Ensure an environment variable is set, otherwise exit with error."""
+    if not value:
+        eprint(f"❌ Missing required environment variable: {var_name}")
+        eprint("   Make sure your .env file is loaded with all required settings.")
+        sys.exit(1)
+    return value
+
+# Validate required vars early
+SERVER_BASE_PATH = require_env("SERVER_BASE", SERVER_BASE_PATH)
+PID_FILE = require_env("PID_FILE", PID_FILE)
+
 def list_available_tracks():
     if not os.path.exists(SERVER_BASE_PATH):
         eprint(f"⚠️ Server base path not found: {SERVER_BASE_PATH}")
         return
     tracks = [name for name in os.listdir(SERVER_BASE_PATH)
-              if os.path.isdir(os.path.join(SERVER_BASE_PATH))]
+              if os.path.isdir(os.path.join(SERVER_BASE_PATH, name))]
     if tracks:
         eprint("\n📂 Available tracks:")
         for t in tracks:
