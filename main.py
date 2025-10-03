@@ -11,22 +11,15 @@ from functools import partial
 
 # === CONFIG ===
 load_dotenv()
-TOKEN = os.getenv("DISCORD_TOKEN")
 
+TOKEN = os.getenv("DISCORD_TOKEN")
 SERVER_BASE = os.getenv("SERVER_BASE")
 CONTROLLER_SCRIPT = os.getenv("CONTROLLER_SCRIPT")
 STATE_FILE = os.getenv("STATE_FILE")
-
 GUILD_ID = int(os.getenv("GUILD_ID"))
 GUILD = discord.Object(id=GUILD_ID)
 
-# SERVER_BASE = "/home/jmk/server"
-# CONTROLLER_SCRIPT = "/home/jmk/discord-bot/server-test/server_controller.py"
-# STATE_FILE = "/home/jmk/discord-bot/server-test/last_server.json"
 DELETE_DELAY = 30  # seconds
-
-# GUILD_ID = 1423184206053249187
-# GUILD = discord.Object(id=GUILD_ID)
 ADMIN_ROLE_NAME = "Game Admin"
 
 # === LOGGING ===
