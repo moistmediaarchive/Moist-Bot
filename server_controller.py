@@ -78,7 +78,9 @@ def start_server(track_name):
             [server_exe],
             cwd=track_path,
             stdout=subprocess.PIPE,
-            stderr=subprocess.STDOUT
+            stderr=subprocess.STDOUT,
+            text=True,      # decode bytes -> str
+            bufsize=1       # line-buffered
         )
     except Exception as e:
         eprint(f"❌ Failed to start server for {track_name}: {e}")
@@ -88,19 +90,16 @@ def start_server(track_name):
     with open(PID_FILE, "w") as f:
         f.write(str(proc.pid))
 
-    # Look for https://acstuff.ru/ join link
+    # Look for join link in output
     join_url = None
-
     for line in proc.stdout:
         line = line.strip()
         print(line)
 
-        match = re.search(r"(https?://[^ ]*acstuff[^ \n\r]*)", line)
-        if match:
-            join_url = match.group(1)
+        if "acstuff" in line:  # relaxed check
+            join_url = line
             print(f"JOIN_URL: {join_url}")
             break
-
 
     if join_url:
         print(f"\n>>> JOIN LINK FOUND <<<\n{join_url}\n")
@@ -108,6 +107,7 @@ def start_server(track_name):
         eprint("⚠️ No join link detected yet.")
 
     eprint(f"Server started for {track_name} (PID {proc.pid})")
+
 
 
 if __name__ == "__main__":
