@@ -91,15 +91,16 @@ def start_server(track_name):
     # Look for https://acstuff.ru/ join link
     join_url = None
 
-    for raw_line in proc.stdout:
-        line = raw_line.decode(errors="ignore").strip()
-        print(line)  # Keep normal output visible in logs
+    for line in proc.stdout:
+        line = line.strip()
+        print(line)
 
-        match = re.search(r"(https://acstuff\.ru/s/q:race/online/join\?[^ \n\r]+)", line)
+        match = re.search(r"(https?://[^ ]*acstuff[^ \n\r]*)", line)
         if match:
             join_url = match.group(1)
             print(f"JOIN_URL: {join_url}")
             break
+
 
     if join_url:
         print(f"\n>>> JOIN LINK FOUND <<<\n{join_url}\n")
