@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="KIRODT1.us@SD",CBS 7 Seattle WA (KIRO) (720p)
+https://livetv-fa.tubi.video/kiro/playlist.m3u8
+#EXTINF:-1 tvg-id="KCPQDT1.us@SD",FOX 13 Seattle WA (KCPQ) (720p)
+https://livetv-fa.tubi.video/kcpq/index.m3u8
