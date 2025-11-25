@@ -5,8 +5,8 @@ https://livetv-fa.tubi.video/kiro/playlist.m3u8
 https://livetv-fa.tubi.video/kcpq/index.m3u8
 #EXTINF:0 tvg-country="US" tvg-logo="https://raw.githubusercontent.com/Tapiosinn/tv-logos/master/countries/united-states/cnn-us.png" tvg-chno="0003" tvg-name="US CNN News" group-title="News",CNN USA
 https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_4_1064000.m3u8?checkedby:iptvcat.com
-#EXTINF:-1 tvg-chno="0004" tvg-name="UK Sky Sports F1", UK Sky Sports F1 FHD D Backup NO_1 alliptvlinks.com
-http://cord-cutter.net:8080/k4Svp2/645504/53704?checkedby:alliptvlinks.com
+#EXTINF:-1 tvg-chno="0004" tvg-name="UK Sky Sports F1", UK Sky Sports F1 FHD Backup NO_1 alliptvlinks.com
+http://cord-cutter.net:8080/k4Svp2/645504/35244?checkedby:alliptvlinks.com
 #EXTINF:-1 tvg-chno="0005" tvg-name="FOX Sports 1", US Fox Sports 1 Backup NO_3 alliptvlinks.com
 http://cord-cutter.net:8080/k4Svp2/645504/1846?checkedby:alliptvlinks.com
 #EXTINF:-1 tvg-chno="0006" tvg-name="FOX Sports 2", FOX Sports 2 HD alliptvlinks.com
