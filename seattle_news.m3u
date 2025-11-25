@@ -1,15 +1,15 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="KIRODT1.us@SD",0001 CBS Kiro 7 Seattle News (720p)
+#EXTINF:-1 tvg-id="KIRODT1.us@SD" tvg-chno="1001" tvg-name="CBS Kiro 7 Seattle News",CBS 7 Seattle WA (KIRO) (720p)
 https://livetv-fa.tubi.video/kiro/playlist.m3u8
-#EXTINF:-1 tvg-id="KCPQDT1.us@SD",0002 FOX 13 Seattle News (720p)
+#EXTINF:-1 tvg-id="KCPQDT1.us@SD" tvg-chno="1002" tvg-name="FOX 13 Seattle News",FOX 13 Seattle WA (KCPQ) (720p)
 https://livetv-fa.tubi.video/kcpq/index.m3u8
-#EXTINF:0 tvg-country="US" tvg-logo="https://raw.githubusercontent.com/Tapiosinn/tv-logos/master/countries/united-states/cnn-us.png" group-title="News",0003 CNN USA News
+#EXTINF:0 tvg-country="US" tvg-logo="https://raw.githubusercontent.com/Tapiosinn/tv-logos/master/countries/united-states/cnn-us.png" tvg-chno="1003" tvg-name="US CNN News" group-title="News",CNN USA
 https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_4_1064000.m3u8?checkedby:iptvcat.com
-#EXTINF:-1, 0004 UK Sky Sports F1
+#EXTINF:-1 tvg-chno="1004" tvg-name="UK Sky Sports F1", UK Sky Sports F1 FHD D Backup NO_1 alliptvlinks.com
 http://cord-cutter.net:8080/k4Svp2/645504/53704?checkedby:alliptvlinks.com
-#EXTINF:-1, 0005 Fox Sports 1
+#EXTINF:-1 tvg-chno="1005" tvg-name="FOX Sports 1", US Fox Sports 1 Backup NO_3 alliptvlinks.com
 http://cord-cutter.net:8080/k4Svp2/645504/1846?checkedby:alliptvlinks.com
-#EXTINF:-1 group-title="TEST", 0006 FOX Sports 2
+#EXTINF:-1 tvg-chno="1006" tvg-name="FOX Sports 2", FOX Sports 2 HD alliptvlinks.com
 http://saveukraine.only4.tv/7925/video.m3u8?token=saveUkrain&checkedby:alliptvlinks.com
-#EXTINF:-1, 0007 US Root Sports
+#EXTINF:-1 tvg-chno="1007" tvg-name="Root Sports", US Root Sports alliptvlinks.com
 http://cord-cutter.net:8080/k4Svp2/645504/85232?checkedby:alliptvlinks.com
