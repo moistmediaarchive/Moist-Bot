@@ -1,8 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="KIRODT1.us@SD" tvg-chno="0001" tvg-name="CBS Kiro 7 Seattle News",CBS 7 Seattle WA (KIRO) (720p)
-https://livetv-fa.tubi.video/kiro/playlist.m3u8
-#EXTINF:-1 tvg-id="KCPQDT1.us@SD" tvg-chno="0002" tvg-name="FOX 13 Seattle News",FOX 13 Seattle WA (KCPQ) (720p)
-https://livetv-fa.tubi.video/kcpq/index.m3u8
 #EXTINF:0 tvg-country="US" tvg-logo="https://raw.githubusercontent.com/Tapiosinn/tv-logos/master/countries/united-states/cnn-us.png" tvg-chno="0003" tvg-name="US CNN News" group-title="News",CNN USA
 https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_4_1064000.m3u8?checkedby:iptvcat.com
 #EXTINF:-1 tvg-chno="0004" tvg-name="UK Sky Sports F1", UK Sky Sports F1 FHD Backup NO_1 alliptvlinks.com
