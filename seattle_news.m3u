@@ -9,3 +9,5 @@ http://cord-cutter.net:8080/k4Svp2/645504/1846?checkedby:alliptvlinks.com
 http://saveukraine.only4.tv/7925/video.m3u8?token=saveUkrain&checkedby:alliptvlinks.com
 #EXTINF:-1 tvg-chno="0007" tvg-name="Root Sports", US Root Sports alliptvlinks.com
 http://cord-cutter.net:8080/k4Svp2/645504/85232?checkedby:alliptvlinks.com
+#EXTINF:-1 tvg-id="",NBC Washington News
+https://nbcu-nbcwashingtonnews-firetv.amagi.tv/playlist.m3u8
